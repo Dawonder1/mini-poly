@@ -1,13 +1,14 @@
 using Unity.VisualScripting;
 using UnityEngine;
 
-class Property : MonoBehaviour
+public class Property : MonoBehaviour
 {
     [SerializeField] protected string _name;
     [SerializeField] protected int price;
     protected int rent;
     protected int unmortgagePrice;
-    protected bool mortgaged = false;
+    public int mortgageValue;
+    protected bool isMortgaged = false;
     public Merchant owner;
     [SerializeField] protected float value;
     [SerializeField] protected float baseValue;
@@ -18,7 +19,9 @@ class Property : MonoBehaviour
     virtual protected void Start()
     {
         rent = price / 10;
-        unmortgagePrice = (int)((price / 2) * 1.1);
+        mortgageValue = price / 2;
+        unmortgagePrice = (int)(mortgageValue * 1.1);
+        
     }
 
     virtual protected void OnTriggerEnter2D(Collider2D collision)
@@ -28,7 +31,7 @@ class Property : MonoBehaviour
             //choose to buy or auction
             Debug.Log("choose to buy or auction");
         }
-        else if (owner != collision.GetComponent<Merchant>())
+        else if (owner != collision.GetComponent<Merchant>() && !isMortgaged)
         {
             //if player is able to pay
             if (collision.GetComponent<Merchant>().pay(rent))
@@ -55,7 +58,7 @@ class Property : MonoBehaviour
     {
         owner.cash -= unmortgagePrice;
         unmortgagePrice = 0;
-        mortgaged = false;
+        isMortgaged = false;
     }
 
     virtual public void mortgage()
@@ -63,7 +66,7 @@ class Property : MonoBehaviour
         int mortgageValue = price / 2;
         unmortgagePrice = mortgageValue + (mortgageValue / 10);
         owner.cash += mortgageValue;
-        mortgaged = true;
+        isMortgaged = true;
     }
 
     public void sell(Merchant merchant)

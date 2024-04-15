@@ -1,6 +1,6 @@
 using UnityEngine;
 
-class Utility : Property
+public class Utility : Property
 {
     override protected void OnTriggerEnter2D(UnityEngine.Collider2D collision)
     {
@@ -9,7 +9,7 @@ class Utility : Property
             //choose to buy or auction
             Debug.Log("choose to buy or auction");
         }
-        else if (owner != collision.GetComponent<Merchant>())
+        else if (owner != collision.GetComponent<Merchant>() && !isMortgaged)
         {
             //Determine the rent whether the owner has a monopoly or not.
             Utility[] utilities = FindObjectsOfType<Utility>();

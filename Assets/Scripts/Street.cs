@@ -1,6 +1,6 @@
 using UnityEngine;
 
-class Street : Property
+public class Street : Property
 {
     [SerializeField] Color colorGroup;
     int buildCost;
@@ -24,6 +24,6 @@ class Street : Property
         int mortgageValue = (price + numHouses * buildCost) / 2;
         unmortgagePrice = mortgageValue + (mortgageValue / 10);
         owner.cash += mortgageValue;
-        mortgaged = true;
+        isMortgaged = true;
     }
 }

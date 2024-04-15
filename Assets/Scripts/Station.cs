@@ -1,5 +1,5 @@
 using UnityEngine;
-class Station : Property
+public class Station : Property
 {
     virtual protected void OnTrigerEnter2D(Collider2D collision)
     {
@@ -8,7 +8,7 @@ class Station : Property
             //choose to buy or auction
             Debug.Log("choose to buy or auction");
         }
-        else if (owner != collision.GetComponent<Merchant>())
+        else if (owner != collision.GetComponent<Merchant>() && !isMortgaged)
         {
             //calculate rent
             int numStations = 0;
