@@ -3,54 +3,63 @@ using UnityEngine;
 
 public class Property : MonoBehaviour
 {
-    [SerializeField] protected string _name;
+    [SerializeField] public string _name;
     [SerializeField] protected int price;
     protected int rent;
     protected int unmortgagePrice;
     public int mortgageValue;
-    protected bool isMortgaged = false;
+    public bool isMortgaged = false;
     public Merchant owner;
-    [SerializeField] protected float value;
-    [SerializeField] protected float baseValue;
-    [SerializeField] protected float potentialValue;
-    [SerializeField] protected float cashFlowValue;
-    [SerializeField] protected float strategicValue;
+    public int value;
 
     virtual protected void Start()
     {
         rent = price / 10;
         mortgageValue = price / 2;
         unmortgagePrice = (int)(mortgageValue * 1.1);
-        
     }
 
-    virtual protected void OnTriggerEnter2D(Collider2D collision)
+    public void host(Merchant merchant)
     {
         if (owner == null)
         {
             //choose to buy or auction
             Debug.Log("choose to buy or auction");
-        }
-        else if (owner != collision.GetComponent<Merchant>() && !isMortgaged)
-        {
-            //if player is able to pay
-            if (collision.GetComponent<Merchant>().pay(rent))
+            if (merchant.chooseToBuy(value, price))
             {
-                owner.cash += 0;
+                if (merchant.pay(price)) merchant.buy(this);
             }
             else
             {
-                //relinquish all properties
-                Property[] allProperties = FindObjectsOfType<Property>();
-                foreach (Property property in allProperties)
-                {
-                    if (property.owner == collision.GetComponent<Merchant>())
-                    {
-                        property.owner = owner;
-                    }
-                }
-                Debug.Log("relinquish all properties");
+                int startingPrice = price;
+                //auction
             }
+        }
+        else if (owner != merchant && !isMortgaged)
+        {
+            getRent(merchant);
+        }
+    }
+
+    virtual protected void getRent(Merchant merchant)
+    {
+        if (merchant.GetComponent<Merchant>().pay(rent))
+        {
+            owner.cash += 0;
+            Debug.Log($"{merchant.GetComponent<Merchant>()._name} has paid ${rent} to {owner._name}");
+        }
+        else
+        {
+            //relinquish all properties
+            Property[] allProperties = FindObjectsOfType<Property>();
+            foreach (Property property in allProperties)
+            {
+                if (property.owner == merchant.GetComponent<Merchant>())
+                {
+                    property.owner = owner;
+                }
+            }
+            Debug.Log("relinquish all properties");
         }
     }
 

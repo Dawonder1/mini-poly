@@ -153,7 +153,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e96256aa17c44ab4ba6af2d5e26da53a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _name: Pie
+  _name: Pig
 --- !u!212 &61067852
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -301,11 +301,11 @@ Transform:
   m_GameObject: {fileID: 77784550}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.004865319, y: 3.4727247, z: -1}
-  m_LocalScale: {x: 0.5678581, y: 0.98127466, z: 1}
+  m_LocalPosition: {x: 0.004865319, y: 3.4727244, z: -1}
+  m_LocalScale: {x: 0.5678581, y: 0.98127455, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1430557637}
+  m_Father: {fileID: 1223383929}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &77784553
 MonoBehaviour:
@@ -322,12 +322,9 @@ MonoBehaviour:
   _name: H and O RailRoad
   price: 200
   mortgageValue: 0
+  isMortgaged: 0
   owner: {fileID: 0}
-  value: 0
-  baseValue: 0
-  potentialValue: 0
-  cashFlowValue: 0
-  strategicValue: 0
+  value: 245
 --- !u!61 &77784554
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -483,7 +480,7 @@ GameObject:
   - component: {fileID: 126137018}
   - component: {fileID: 126137020}
   m_Layer: 0
-  m_Name: Square (10)
+  m_Name: Just Visiting
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -550,11 +547,11 @@ Transform:
   m_GameObject: {fileID: 126137017}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.4945524, y: -3.5052185, z: -1}
-  m_LocalScale: {x: 1.0099717, y: 1.0194227, z: 1}
+  m_LocalPosition: {x: -3.4945524, y: -3.5052183, z: -1}
+  m_LocalScale: {x: 1.0099717, y: 1.0194225, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1430557637}
+  m_Father: {fileID: 1798461311}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &126137020
 BoxCollider2D:
@@ -681,11 +678,11 @@ Transform:
   m_GameObject: {fileID: 142439892}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.4829414, y: -2.614269, z: -1}
+  m_LocalPosition: {x: -3.4829414, y: -2.6142688, z: -1}
   m_LocalScale: {x: 1.033706, y: 0.58044386, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1430557637}
+  m_Father: {fileID: 1606192976}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &142439895
 MonoBehaviour:
@@ -699,16 +696,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26c9437e942f8b74caadd0ee8a02e0c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _name: 
-  price: 0
+  _name: St. Charles Place
+  price: 140
   mortgageValue: 0
+  isMortgaged: 0
   owner: {fileID: 0}
-  value: 0
-  baseValue: 0
-  potentialValue: 0
-  cashFlowValue: 0
-  strategicValue: 0
+  value: 180
   colorGroup: {r: 0, g: 0, b: 0, a: 0}
+  counterparts: []
 --- !u!61 &142439896
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -766,7 +761,7 @@ GameObject:
   - component: {fileID: 163585671}
   - component: {fileID: 163585673}
   m_Layer: 0
-  m_Name: Square (4)
+  m_Name: Income Tax
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -833,11 +828,11 @@ Transform:
   m_GameObject: {fileID: 163585670}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.655336, y: -3.4778283, z: -1}
+  m_LocalPosition: {x: 0.655336, y: -3.477828, z: -1}
   m_LocalScale: {x: 0.59067225, y: 1.052233, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1430557637}
+  m_Father: {fileID: 1798461311}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &163585673
 BoxCollider2D:
@@ -964,11 +959,11 @@ Transform:
   m_GameObject: {fileID: 201263891}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.3098543, y: -3.4778283, z: -1}
-  m_LocalScale: {x: 0.5827805, y: 1.0304133, z: 1}
+  m_LocalPosition: {x: 1.3098543, y: -3.4778275, z: -1}
+  m_LocalScale: {x: 0.5827805, y: 1.0304132, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1430557637}
+  m_Father: {fileID: 1265901746}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &201263894
 MonoBehaviour:
@@ -982,16 +977,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26c9437e942f8b74caadd0ee8a02e0c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _name: 
-  price: 0
+  _name: Baltic Avenue
+  price: 60
   mortgageValue: 0
+  isMortgaged: 0
   owner: {fileID: 0}
-  value: 0
-  baseValue: 0
-  potentialValue: 0
-  cashFlowValue: 0
-  strategicValue: 0
+  value: 84
   colorGroup: {r: 0.79622644, g: 0.6173831, b: 0.20281231, a: 0}
+  counterparts: []
 --- !u!61 &201263895
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1117,11 +1110,11 @@ Transform:
   m_GameObject: {fileID: 205352258}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.4751735, y: -1.3156407, z: -1}
+  m_LocalPosition: {x: -3.4751735, y: -1.3156404, z: -1}
   m_LocalScale: {x: 1.033706, y: 0.58044386, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1430557637}
+  m_Father: {fileID: 1606192976}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &205352261
 MonoBehaviour:
@@ -1135,16 +1128,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26c9437e942f8b74caadd0ee8a02e0c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _name: 
-  price: 0
+  _name: States Avenue
+  price: 140
   mortgageValue: 0
+  isMortgaged: 0
   owner: {fileID: 0}
-  value: 0
-  baseValue: 0
-  potentialValue: 0
-  cashFlowValue: 0
-  strategicValue: 0
+  value: 180
   colorGroup: {r: 0, g: 0, b: 0, a: 0}
+  counterparts: []
 --- !u!61 &205352262
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1269,11 +1260,11 @@ Transform:
   m_GameObject: {fileID: 210070256}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.4956157, y: -0.65782034, z: -1}
-  m_LocalScale: {x: 1.0634888, y: 0.57676274, z: 1}
+  m_LocalPosition: {x: 3.4956157, y: -0.6578203, z: -1}
+  m_LocalScale: {x: 1.0634888, y: 0.5767627, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1430557637}
+  m_Father: {fileID: 1076994529}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &210070259
 BoxCollider2D:
@@ -1400,11 +1391,11 @@ Transform:
   m_GameObject: {fileID: 213138191}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.624778, y: 3.4762406, z: -1}
-  m_LocalScale: {x: 0.5775685, y: 1.0081934, z: 1}
+  m_LocalPosition: {x: 2.624778, y: 3.4762402, z: -1}
+  m_LocalScale: {x: 0.5775685, y: 1.0081933, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1430557637}
+  m_Father: {fileID: 903661553}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &213138194
 MonoBehaviour:
@@ -1418,16 +1409,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26c9437e942f8b74caadd0ee8a02e0c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _name: 
-  price: 0
+  _name: Marvin Avenue
+  price: 260
   mortgageValue: 0
+  isMortgaged: 0
   owner: {fileID: 0}
-  value: 0
-  baseValue: 0
-  potentialValue: 0
-  cashFlowValue: 0
-  strategicValue: 0
+  value: 369
   colorGroup: {r: 0, g: 0, b: 0, a: 0}
+  counterparts: []
 --- !u!61 &213138195
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1553,11 +1542,11 @@ Transform:
   m_GameObject: {fileID: 240568318}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.4833505, y: -2.6369524, z: -1}
-  m_LocalScale: {x: 1.0634888, y: 0.57676274, z: 1}
+  m_LocalPosition: {x: 3.4833505, y: -2.636952, z: -1}
+  m_LocalScale: {x: 1.0634888, y: 0.5767626, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1430557637}
+  m_Father: {fileID: 347207718}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &240568321
 MonoBehaviour:
@@ -1571,16 +1560,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26c9437e942f8b74caadd0ee8a02e0c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _name: 
-  price: 0
+  _name: Boardwalk
+  price: 400
   mortgageValue: 0
+  isMortgaged: 0
   owner: {fileID: 0}
-  value: 0
-  baseValue: 0
-  potentialValue: 0
-  cashFlowValue: 0
-  strategicValue: 0
+  value: 510
   colorGroup: {r: 0, g: 0, b: 0, a: 0}
+  counterparts: []
 --- !u!61 &240568322
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1710,7 +1697,7 @@ Transform:
   m_LocalScale: {x: 1.033706, y: 0.58044386, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1430557637}
+  m_Father: {fileID: 1606192976}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &242229461
 MonoBehaviour:
@@ -1724,16 +1711,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26c9437e942f8b74caadd0ee8a02e0c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _name: 
-  price: 0
+  _name: Virginia Avenue
+  price: 160
   mortgageValue: 0
+  isMortgaged: 0
   owner: {fileID: 0}
-  value: 0
-  baseValue: 0
-  potentialValue: 0
-  cashFlowValue: 0
-  strategicValue: 0
+  value: 207
   colorGroup: {r: 0, g: 0, b: 0, a: 0}
+  counterparts: []
 --- !u!61 &242229462
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1859,10 +1844,10 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 3.4833505, y: 1.3213118, z: -1}
-  m_LocalScale: {x: 1.0634888, y: 0.57676274, z: 1}
+  m_LocalScale: {x: 1.0634888, y: 0.5767627, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1430557637}
+  m_Father: {fileID: 1844011782}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &245116467
 BoxCollider2D:
@@ -1988,11 +1973,11 @@ Transform:
   m_GameObject: {fileID: 250714516}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.3100177, y: -3.477091, z: -1}
-  m_LocalScale: {x: 0.5985244, y: 1.052357, z: 1}
+  m_LocalPosition: {x: -1.3100177, y: -3.4770908, z: -1}
+  m_LocalScale: {x: 0.5985244, y: 1.0523568, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1430557637}
+  m_Father: {fileID: 1076994529}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &250714519
 BoxCollider2D:
@@ -2039,6 +2024,107 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &303281172
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 303281173}
+  m_Layer: 0
+  m_Name: Group 7
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &303281173
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 303281172}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1006966274}
+  - {fileID: 703141883}
+  - {fileID: 1613228416}
+  m_Father: {fileID: 1939236019}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &347207717
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 347207718}
+  m_Layer: 0
+  m_Name: Group 8
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &347207718
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 347207717}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1931718342}
+  - {fileID: 240568320}
+  m_Father: {fileID: 1939236019}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &462244948
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 462244949}
+  m_Layer: 0
+  m_Name: Group 4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &462244949
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 462244948}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 664383608}
+  - {fileID: 1489414488}
+  - {fileID: 1275140541}
+  m_Father: {fileID: 1939236019}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &502243667
 GameObject:
   m_ObjectHideFlags: 0
@@ -2119,11 +2205,11 @@ Transform:
   m_GameObject: {fileID: 502243667}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.3075238, y: 3.4762406, z: -1}
-  m_LocalScale: {x: 0.5678581, y: 1.0081934, z: 1}
+  m_LocalPosition: {x: -1.3075238, y: 3.4762402, z: -1}
+  m_LocalScale: {x: 0.5678581, y: 1.0081933, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1430557637}
+  m_Father: {fileID: 1126382692}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &502243670
 MonoBehaviour:
@@ -2137,16 +2223,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26c9437e942f8b74caadd0ee8a02e0c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _name: 
-  price: 0
+  _name: Indiana Avenue
+  price: 220
   mortgageValue: 0
+  isMortgaged: 0
   owner: {fileID: 0}
-  value: 0
-  baseValue: 0
-  potentialValue: 0
-  cashFlowValue: 0
-  strategicValue: 0
+  value: 288
   colorGroup: {r: 0, g: 0, b: 0, a: 0}
+  counterparts: []
 --- !u!61 &502243671
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2296,7 +2380,7 @@ GameObject:
   - component: {fileID: 600763697}
   - component: {fileID: 600763699}
   m_Layer: 0
-  m_Name: Square (38)
+  m_Name: Luxury Tax
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2363,11 +2447,11 @@ Transform:
   m_GameObject: {fileID: 600763696}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.4833505, y: -1.9734612, z: -1}
-  m_LocalScale: {x: 1.0634888, y: 0.57676274, z: 1}
+  m_LocalPosition: {x: 3.4833505, y: -1.973461, z: -1}
+  m_LocalScale: {x: 1.0634888, y: 0.5767627, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1430557637}
+  m_Father: {fileID: 1798461311}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &600763699
 BoxCollider2D:
@@ -2493,11 +2577,11 @@ Transform:
   m_GameObject: {fileID: 640602727}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.9600388, y: -3.4773178, z: -1}
+  m_LocalPosition: {x: 1.9600388, y: -3.4773176, z: -1}
   m_LocalScale: {x: 0.57485795, y: 1.0412499, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1430557637}
+  m_Father: {fileID: 1844011782}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &640602730
 BoxCollider2D:
@@ -2624,11 +2708,11 @@ Transform:
   m_GameObject: {fileID: 664383606}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.4710848, y: 0.6634913, z: -1}
+  m_LocalPosition: {x: -3.4710848, y: 0.6634912, z: -1}
   m_LocalScale: {x: 1.033706, y: 0.58044386, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1430557637}
+  m_Father: {fileID: 462244949}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &664383609
 MonoBehaviour:
@@ -2642,16 +2726,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26c9437e942f8b74caadd0ee8a02e0c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _name: 
-  price: 0
+  _name: St. James Place
+  price: 180
   mortgageValue: 0
+  isMortgaged: 0
   owner: {fileID: 0}
-  value: 0
-  baseValue: 0
-  potentialValue: 0
-  cashFlowValue: 0
-  strategicValue: 0
+  value: 234
   colorGroup: {r: 0, g: 0, b: 0, a: 0}
+  counterparts: []
 --- !u!61 &664383610
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2777,11 +2859,11 @@ Transform:
   m_GameObject: {fileID: 694411142}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.65415037, y: 3.4762406, z: -1}
-  m_LocalScale: {x: 0.5775685, y: 1.0081934, z: 1}
+  m_LocalPosition: {x: 0.6541504, y: 3.4762402, z: -1}
+  m_LocalScale: {x: 0.5775685, y: 1.0081933, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1430557637}
+  m_Father: {fileID: 903661553}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &694411145
 MonoBehaviour:
@@ -2795,16 +2877,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26c9437e942f8b74caadd0ee8a02e0c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _name: 
-  price: 0
+  _name: Atlantic Avenue
+  price: 260
   mortgageValue: 0
+  isMortgaged: 0
   owner: {fileID: 0}
-  value: 0
-  baseValue: 0
-  potentialValue: 0
-  cashFlowValue: 0
-  strategicValue: 0
+  value: 342
   colorGroup: {r: 0, g: 0, b: 0, a: 0}
+  counterparts: []
 --- !u!61 &694411146
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2930,11 +3010,11 @@ Transform:
   m_GameObject: {fileID: 703141881}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.4833505, y: 1.9621195, z: -1}
-  m_LocalScale: {x: 1.0634888, y: 0.57676274, z: 1}
+  m_LocalPosition: {x: 3.4833505, y: 1.9621191, z: -1}
+  m_LocalScale: {x: 1.0634888, y: 0.5767626, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1430557637}
+  m_Father: {fileID: 303281173}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &703141884
 MonoBehaviour:
@@ -2948,16 +3028,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26c9437e942f8b74caadd0ee8a02e0c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _name: 
-  price: 0
+  _name: North Carolina Avenue
+  price: 300
   mortgageValue: 0
+  isMortgaged: 0
   owner: {fileID: 0}
-  value: 0
-  baseValue: 0
-  potentialValue: 0
-  cashFlowValue: 0
-  strategicValue: 0
+  value: 396
   colorGroup: {r: 0, g: 0, b: 0, a: 0}
+  counterparts: []
 --- !u!61 &703141885
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3082,11 +3160,11 @@ Transform:
   m_GameObject: {fileID: 717738631}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.9673162, y: 3.4592278, z: -1}
-  m_LocalScale: {x: 0.5678581, y: 1.0081934, z: 1}
+  m_LocalPosition: {x: -1.9673162, y: 3.4592273, z: -1}
+  m_LocalScale: {x: 0.5678581, y: 1.0081933, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1430557637}
+  m_Father: {fileID: 1076994529}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &717738634
 BoxCollider2D:
@@ -3133,6 +3211,39 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &730185770
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 730185771}
+  m_Layer: 0
+  m_Name: Utilities
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &730185771
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 730185770}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1716352693}
+  - {fileID: 1828959169}
+  m_Father: {fileID: 1430557637}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &742581129
 GameObject:
   m_ObjectHideFlags: 0
@@ -3213,11 +3324,11 @@ Transform:
   m_GameObject: {fileID: 742581129}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.6562762, y: -3.482932, z: -1}
+  m_LocalPosition: {x: -0.6562762, y: -3.4829316, z: -1}
   m_LocalScale: {x: 0.5906405, y: 1.0632219, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1430557637}
+  m_Father: {fileID: 1052575343}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &742581132
 MonoBehaviour:
@@ -3231,16 +3342,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26c9437e942f8b74caadd0ee8a02e0c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _name: 
-  price: 0
+  _name: Oriental Avenue
+  price: 100
   mortgageValue: 0
+  isMortgaged: 0
   owner: {fileID: 0}
-  value: 0
-  baseValue: 0
-  potentialValue: 0
-  cashFlowValue: 0
-  strategicValue: 0
+  value: 136
   colorGroup: {r: 0, g: 0, b: 0, a: 0}
+  counterparts: []
 --- !u!61 &742581133
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3298,7 +3407,7 @@ GameObject:
   - component: {fileID: 746897474}
   - component: {fileID: 746897476}
   m_Layer: 0
-  m_Name: Square (20)
+  m_Name: Free Parking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3365,11 +3474,11 @@ Transform:
   m_GameObject: {fileID: 746897473}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.4800386, y: 3.4832156, z: -1}
-  m_LocalScale: {x: 0.9850672, y: 0.9984083, z: 1}
+  m_LocalPosition: {x: -3.4800386, y: 3.4832153, z: -1}
+  m_LocalScale: {x: 0.9850672, y: 0.99840826, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1430557637}
+  m_Father: {fileID: 1798461311}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &746897476
 BoxCollider2D:
@@ -3499,7 +3608,7 @@ Transform:
   m_LocalScale: {x: 1.033706, y: 0.58044386, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1430557637}
+  m_Father: {fileID: 1844011782}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &756411232
 BoxCollider2D:
@@ -3558,7 +3667,7 @@ GameObject:
   - component: {fileID: 815460175}
   - component: {fileID: 815460177}
   m_Layer: 0
-  m_Name: Square
+  m_Name: Go
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3625,11 +3734,11 @@ Transform:
   m_GameObject: {fileID: 815460174}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.478281, y: -3.4935932, z: -1}
-  m_LocalScale: {x: 1.0020525, y: 0.99731976, z: 1}
+  m_LocalPosition: {x: 3.478281, y: -3.493593, z: -1}
+  m_LocalScale: {x: 1.0020525, y: 0.9973197, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1430557637}
+  m_Father: {fileID: 1798461311}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &815460177
 BoxCollider2D:
@@ -3855,10 +3964,10 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 3.4751735, y: 0, z: -1}
-  m_LocalScale: {x: 1.0634888, y: 0.57676274, z: 1}
+  m_LocalScale: {x: 1.0634888, y: 0.5767627, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1430557637}
+  m_Father: {fileID: 1223383929}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &877929900
 MonoBehaviour:
@@ -3875,12 +3984,9 @@ MonoBehaviour:
   _name: ShortLine
   price: 200
   mortgageValue: 0
+  isMortgaged: 0
   owner: {fileID: 0}
-  value: 0
-  baseValue: 0
-  potentialValue: 0
-  cashFlowValue: 0
-  strategicValue: 0
+  value: 245
 --- !u!61 &877929901
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3926,6 +4032,40 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &903661552
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 903661553}
+  m_Layer: 0
+  m_Name: Group 6
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &903661553
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 903661552}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 694411144}
+  - {fileID: 2040663307}
+  - {fileID: 213138193}
+  m_Father: {fileID: 1939236019}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &962174956
 GameObject:
   m_ObjectHideFlags: 0
@@ -4006,11 +4146,11 @@ Transform:
   m_GameObject: {fileID: 962174956}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.616928, y: 3.465636, z: -1}
+  m_LocalPosition: {x: -2.616928, y: 3.4656355, z: -1}
   m_LocalScale: {x: 0.56785357, y: 1.048622, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1430557637}
+  m_Father: {fileID: 1126382692}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &962174959
 MonoBehaviour:
@@ -4024,16 +4164,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26c9437e942f8b74caadd0ee8a02e0c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _name: 
-  price: 0
+  _name: Kentucky Avenue
+  price: 220
   mortgageValue: 0
+  isMortgaged: 0
   owner: {fileID: 0}
-  value: 0
-  baseValue: 0
-  potentialValue: 0
-  cashFlowValue: 0
-  strategicValue: 0
+  value: 288
   colorGroup: {r: 0, g: 0, b: 0, a: 0}
+  counterparts: []
 --- !u!61 &962174960
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4159,11 +4297,11 @@ Transform:
   m_GameObject: {fileID: 1006966272}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.4814696, y: 2.614269, z: -1}
-  m_LocalScale: {x: 1.0634888, y: 0.57676274, z: 1}
+  m_LocalPosition: {x: 3.4814696, y: 2.6142688, z: -1}
+  m_LocalScale: {x: 1.0634888, y: 0.5767626, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1430557637}
+  m_Father: {fileID: 303281173}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1006966275
 MonoBehaviour:
@@ -4177,16 +4315,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26c9437e942f8b74caadd0ee8a02e0c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _name: 
-  price: 0
+  _name: Pacific Avenue
+  price: 300
   mortgageValue: 0
+  isMortgaged: 0
   owner: {fileID: 0}
-  value: 0
-  baseValue: 0
-  potentialValue: 0
-  cashFlowValue: 0
-  strategicValue: 0
+  value: 396
   colorGroup: {r: 0, g: 0, b: 0, a: 0}
+  counterparts: []
 --- !u!61 &1006966276
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4232,6 +4368,176 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &1052575342
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1052575343}
+  m_Layer: 0
+  m_Name: Group 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1052575343
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1052575342}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 742581131}
+  - {fileID: 1841402415}
+  - {fileID: 1614055544}
+  m_Father: {fileID: 1939236019}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1076994528
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1076994529}
+  m_Layer: 0
+  m_Name: Chance
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1076994529
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1076994528}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 250714518}
+  - {fileID: 717738633}
+  - {fileID: 210070258}
+  m_Father: {fileID: 1430557637}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1126382691
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1126382692}
+  m_Layer: 0
+  m_Name: Group 5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1126382692
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1126382691}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 962174958}
+  - {fileID: 502243669}
+  - {fileID: 1959538824}
+  m_Father: {fileID: 1939236019}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1223383928
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1223383929}
+  m_Layer: 0
+  m_Name: Stations
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1223383929
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1223383928}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1760667985}
+  - {fileID: 1662102017}
+  - {fileID: 77784552}
+  - {fileID: 877929899}
+  m_Father: {fileID: 1430557637}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1265901745
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1265901746}
+  m_Layer: 0
+  m_Name: Group 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1265901746
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1265901745}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1661180757}
+  - {fileID: 201263893}
+  m_Father: {fileID: 1939236019}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1275140539
 GameObject:
   m_ObjectHideFlags: 0
@@ -4312,11 +4618,11 @@ Transform:
   m_GameObject: {fileID: 1275140539}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.48335, y: 2.6312814, z: -1}
+  m_LocalPosition: {x: -3.48335, y: 2.631281, z: -1}
   m_LocalScale: {x: 1.033706, y: 0.58044386, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1430557637}
+  m_Father: {fileID: 462244949}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1275140542
 MonoBehaviour:
@@ -4330,16 +4636,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26c9437e942f8b74caadd0ee8a02e0c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _name: 
-  price: 0
+  _name: New York Avenue
+  price: 200
   mortgageValue: 0
+  isMortgaged: 0
   owner: {fileID: 0}
-  value: 0
-  baseValue: 0
-  potentialValue: 0
-  cashFlowValue: 0
-  strategicValue: 0
+  value: 261
   colorGroup: {r: 0, g: 0, b: 0, a: 0}
+  counterparts: []
 --- !u!61 &1275140543
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4468,46 +4772,12 @@ Transform:
   m_LocalScale: {x: 2.4459212, y: 1.7283075, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 815460176}
-  - {fileID: 1661180757}
-  - {fileID: 640602729}
-  - {fileID: 201263893}
-  - {fileID: 163585672}
-  - {fileID: 1760667985}
-  - {fileID: 742581131}
-  - {fileID: 250714518}
-  - {fileID: 1841402415}
-  - {fileID: 1614055544}
-  - {fileID: 126137019}
-  - {fileID: 142439894}
-  - {fileID: 1716352693}
-  - {fileID: 205352260}
-  - {fileID: 242229460}
-  - {fileID: 1662102017}
-  - {fileID: 664383608}
-  - {fileID: 756411231}
-  - {fileID: 1489414488}
-  - {fileID: 1275140541}
-  - {fileID: 746897475}
-  - {fileID: 962174958}
-  - {fileID: 717738633}
-  - {fileID: 502243669}
-  - {fileID: 1959538824}
-  - {fileID: 77784552}
-  - {fileID: 694411144}
-  - {fileID: 2040663307}
-  - {fileID: 1828959169}
-  - {fileID: 213138193}
-  - {fileID: 1672897769}
-  - {fileID: 1006966274}
-  - {fileID: 703141883}
-  - {fileID: 245116466}
-  - {fileID: 1613228416}
-  - {fileID: 877929899}
-  - {fileID: 210070258}
-  - {fileID: 1931718342}
-  - {fileID: 600763698}
-  - {fileID: 240568320}
+  - {fileID: 1844011782}
+  - {fileID: 1223383929}
+  - {fileID: 1798461311}
+  - {fileID: 1076994529}
+  - {fileID: 730185771}
+  - {fileID: 1939236019}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1430557638
@@ -4643,11 +4913,11 @@ Transform:
   m_GameObject: {fileID: 1489414486}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.4751735, y: 1.9734612, z: -1}
+  m_LocalPosition: {x: -3.4751735, y: 1.9734609, z: -1}
   m_LocalScale: {x: 1.033706, y: 0.58044386, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1430557637}
+  m_Father: {fileID: 462244949}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1489414489
 MonoBehaviour:
@@ -4661,16 +4931,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26c9437e942f8b74caadd0ee8a02e0c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _name: 
-  price: 0
+  _name: Tennessee Avenue
+  price: 180
   mortgageValue: 0
+  isMortgaged: 0
   owner: {fileID: 0}
-  value: 0
-  baseValue: 0
-  potentialValue: 0
-  cashFlowValue: 0
-  strategicValue: 0
+  value: 234
   colorGroup: {r: 0, g: 0, b: 0, a: 0}
+  counterparts: []
 --- !u!61 &1489414490
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4865,6 +5133,40 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &1606192975
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1606192976}
+  m_Layer: 0
+  m_Name: Group 3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1606192976
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1606192975}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 142439894}
+  - {fileID: 205352260}
+  - {fileID: 242229460}
+  m_Father: {fileID: 1939236019}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1611539853
 GameObject:
   m_ObjectHideFlags: 0
@@ -5043,11 +5345,11 @@ Transform:
   m_GameObject: {fileID: 1613228414}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.4833505, y: 0.6578204, z: -1}
-  m_LocalScale: {x: 1.0634888, y: 0.57676274, z: 1}
+  m_LocalPosition: {x: 3.4833505, y: 0.6578203, z: -1}
+  m_LocalScale: {x: 1.0634888, y: 0.5767626, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1430557637}
+  m_Father: {fileID: 303281173}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1613228417
 MonoBehaviour:
@@ -5061,16 +5363,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26c9437e942f8b74caadd0ee8a02e0c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _name: 
-  price: 0
+  _name: Pennsylvania Avenue
+  price: 320
   mortgageValue: 0
+  isMortgaged: 0
   owner: {fileID: 0}
-  value: 0
-  baseValue: 0
-  potentialValue: 0
-  cashFlowValue: 0
-  strategicValue: 0
+  value: 423
   colorGroup: {r: 0, g: 0, b: 0, a: 0}
+  counterparts: []
 --- !u!61 &1613228418
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5196,11 +5496,11 @@ Transform:
   m_GameObject: {fileID: 1614055542}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.6155794, y: -3.4873555, z: -1}
-  m_LocalScale: {x: 0.5827695, y: 1.0304687, z: 1}
+  m_LocalPosition: {x: -2.6155794, y: -3.487355, z: -1}
+  m_LocalScale: {x: 0.5827695, y: 1.0304685, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1430557637}
+  m_Father: {fileID: 1052575343}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1614055545
 MonoBehaviour:
@@ -5214,16 +5514,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26c9437e942f8b74caadd0ee8a02e0c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _name: 
-  price: 0
+  _name: Connecticut Avenue
+  price: 120
   mortgageValue: 0
+  isMortgaged: 0
   owner: {fileID: 0}
-  value: 0
-  baseValue: 0
-  potentialValue: 0
-  cashFlowValue: 0
-  strategicValue: 0
+  value: 153
   colorGroup: {r: 0, g: 0, b: 0, a: 0}
+  counterparts: []
 --- !u!61 &1614055546
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5280,7 +5578,6 @@ GameObject:
   - component: {fileID: 1661180757}
   - component: {fileID: 1661180756}
   - component: {fileID: 1661180758}
-  - component: {fileID: 1661180759}
   m_Layer: 0
   m_Name: Square (1)
   m_TagString: Untagged
@@ -5349,11 +5646,11 @@ Transform:
   m_GameObject: {fileID: 1661180755}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.6193817, y: -3.482195, z: -1}
-  m_LocalScale: {x: 0.59074014, y: 1.0194056, z: 1}
+  m_LocalPosition: {x: 2.619382, y: -3.4821944, z: -1}
+  m_LocalScale: {x: 0.5907402, y: 1.0194055, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1430557637}
+  m_Father: {fileID: 1265901746}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1661180758
 MonoBehaviour:
@@ -5367,61 +5664,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26c9437e942f8b74caadd0ee8a02e0c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _name: 
-  price: 0
+  _name: Mediterranean Avenue
+  price: 60
   mortgageValue: 0
+  isMortgaged: 0
   owner: {fileID: 0}
-  value: 0
-  baseValue: 0
-  potentialValue: 0
-  cashFlowValue: 0
-  strategicValue: 0
+  value: 82
   colorGroup: {r: 0.79622644, g: 0.6173831, b: 0.20281231, a: 0}
---- !u!61 &1661180759
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1661180755}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  counterparts: []
 --- !u!1 &1662102015
 GameObject:
   m_ObjectHideFlags: 0
@@ -5506,7 +5756,7 @@ Transform:
   m_LocalScale: {x: 1.033706, y: 0.58044386, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1430557637}
+  m_Father: {fileID: 1223383929}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1662102018
 MonoBehaviour:
@@ -5523,12 +5773,9 @@ MonoBehaviour:
   _name: Pennsylvania RailRoad
   price: 200
   mortgageValue: 0
+  isMortgaged: 0
   owner: {fileID: 0}
-  value: 0
-  baseValue: 0
-  potentialValue: 0
-  cashFlowValue: 0
-  strategicValue: 0
+  value: 245
 --- !u!61 &1662102019
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5586,7 +5833,7 @@ GameObject:
   - component: {fileID: 1672897768}
   - component: {fileID: 1672897770}
   m_Layer: 0
-  m_Name: Square (30)
+  m_Name: Go To Jail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5653,11 +5900,11 @@ Transform:
   m_GameObject: {fileID: 1672897767}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.4853947, y: 3.4843497, z: -1}
-  m_LocalScale: {x: 0.99556565, y: 0.96776485, z: 1}
+  m_LocalPosition: {x: 3.4853947, y: 3.4843493, z: -1}
+  m_LocalScale: {x: 0.99556565, y: 0.9677648, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1430557637}
+  m_Father: {fileID: 1798461311}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1672897770
 BoxCollider2D:
@@ -5717,7 +5964,7 @@ GameObject:
   - component: {fileID: 1716352694}
   - component: {fileID: 1716352695}
   m_Layer: 0
-  m_Name: Square (12)
+  m_Name: Electric Company
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5784,11 +6031,11 @@ Transform:
   m_GameObject: {fileID: 1716352691}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.4751735, y: -1.9677904, z: -1}
+  m_LocalPosition: {x: -3.4751735, y: -1.9677902, z: -1}
   m_LocalScale: {x: 1.033706, y: 0.58044386, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1430557637}
+  m_Father: {fileID: 730185771}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1716352694
 MonoBehaviour:
@@ -5805,12 +6052,10 @@ MonoBehaviour:
   _name: Electric Company
   price: 150
   mortgageValue: 0
+  isMortgaged: 0
   owner: {fileID: 0}
-  value: 0
-  baseValue: 0
-  potentialValue: 0
-  cashFlowValue: 0
-  strategicValue: 0
+  value: 255
+  counterpart: {fileID: 1828959170}
 --- !u!61 &1716352695
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5936,11 +6181,11 @@ Transform:
   m_GameObject: {fileID: 1760667983}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.0017989194, y: -3.4832723, z: -1}
+  m_LocalPosition: {x: 0.0017989194, y: -3.483272, z: -1}
   m_LocalScale: {x: 0.5985442, y: 1.0633013, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1430557637}
+  m_Father: {fileID: 1223383929}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1760667986
 MonoBehaviour:
@@ -5957,12 +6202,9 @@ MonoBehaviour:
   _name: Reading RailRoad
   price: 200
   mortgageValue: 0
+  isMortgaged: 0
   owner: {fileID: 0}
-  value: 0
-  baseValue: 0
-  potentialValue: 0
-  cashFlowValue: 0
-  strategicValue: 0
+  value: 245
 --- !u!61 &1760667987
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6008,6 +6250,43 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &1798461310
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1798461311}
+  m_Layer: 0
+  m_Name: Special Spaces
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1798461311
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1798461310}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 815460176}
+  - {fileID: 163585672}
+  - {fileID: 126137019}
+  - {fileID: 746897475}
+  - {fileID: 1672897769}
+  - {fileID: 600763698}
+  m_Father: {fileID: 1430557637}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1828959167
 GameObject:
   m_ObjectHideFlags: 0
@@ -6021,7 +6300,7 @@ GameObject:
   - component: {fileID: 1828959170}
   - component: {fileID: 1828959171}
   m_Layer: 0
-  m_Name: Square (28)
+  m_Name: Water Works
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6088,11 +6367,11 @@ Transform:
   m_GameObject: {fileID: 1828959167}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.9698509, y: 3.4762406, z: -1}
-  m_LocalScale: {x: 0.5678581, y: 1.0081934, z: 1}
+  m_LocalPosition: {x: 1.9698509, y: 3.4762404, z: -1}
+  m_LocalScale: {x: 0.5678581, y: 1.0081933, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1430557637}
+  m_Father: {fileID: 730185771}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1828959170
 MonoBehaviour:
@@ -6109,12 +6388,10 @@ MonoBehaviour:
   _name: Water Works
   price: 150
   mortgageValue: 0
+  isMortgaged: 0
   owner: {fileID: 0}
-  value: 0
-  baseValue: 0
-  potentialValue: 0
-  cashFlowValue: 0
-  strategicValue: 0
+  value: 255
+  counterpart: {fileID: 1716352694}
 --- !u!61 &1828959171
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6241,10 +6518,10 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -1.9645771, y: -3.4757867, z: -1}
-  m_LocalScale: {x: 0.5748174, y: 1.0632497, z: 1}
+  m_LocalScale: {x: 0.5748174, y: 1.0632495, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1430557637}
+  m_Father: {fileID: 1052575343}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1841402416
 MonoBehaviour:
@@ -6258,16 +6535,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26c9437e942f8b74caadd0ee8a02e0c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _name: 
-  price: 0
+  _name: Vermont Avenue
+  price: 100
   mortgageValue: 0
+  isMortgaged: 0
   owner: {fileID: 0}
-  value: 0
-  baseValue: 0
-  potentialValue: 0
-  cashFlowValue: 0
-  strategicValue: 0
+  value: 136
   colorGroup: {r: 0, g: 0, b: 0, a: 0}
+  counterparts: []
 --- !u!61 &1841402417
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6313,6 +6588,40 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &1844011781
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1844011782}
+  m_Layer: 0
+  m_Name: Community Chest
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1844011782
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1844011781}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 640602729}
+  - {fileID: 756411231}
+  - {fileID: 245116466}
+  m_Father: {fileID: 1430557637}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1931718340
 GameObject:
   m_ObjectHideFlags: 0
@@ -6394,10 +6703,10 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 3.4833505, y: -1.3213117, z: -1}
-  m_LocalScale: {x: 1.0634888, y: 0.57676274, z: 1}
+  m_LocalScale: {x: 1.0634888, y: 0.5767626, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1430557637}
+  m_Father: {fileID: 347207718}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1931718343
 MonoBehaviour:
@@ -6411,16 +6720,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26c9437e942f8b74caadd0ee8a02e0c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _name: 
-  price: 0
+  _name: Park Place
+  price: 350
   mortgageValue: 0
+  isMortgaged: 0
   owner: {fileID: 0}
-  value: 0
-  baseValue: 0
-  potentialValue: 0
-  cashFlowValue: 0
-  strategicValue: 0
+  value: 455
   colorGroup: {r: 0, g: 0, b: 0, a: 0}
+  counterparts: []
 --- !u!61 &1931718344
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6466,6 +6773,45 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &1939236018
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1939236019}
+  m_Layer: 0
+  m_Name: Streets
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1939236019
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1939236018}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1265901746}
+  - {fileID: 1052575343}
+  - {fileID: 1606192976}
+  - {fileID: 462244949}
+  - {fileID: 1126382692}
+  - {fileID: 903661553}
+  - {fileID: 303281173}
+  - {fileID: 347207718}
+  m_Father: {fileID: 1430557637}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1959538822
 GameObject:
   m_ObjectHideFlags: 0
@@ -6546,11 +6892,11 @@ Transform:
   m_GameObject: {fileID: 1959538822}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.65823877, y: 3.4762406, z: -1}
-  m_LocalScale: {x: 0.5581478, y: 1.0081934, z: 1}
+  m_LocalPosition: {x: -0.65823877, y: 3.4762402, z: -1}
+  m_LocalScale: {x: 0.5581478, y: 1.0081933, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1430557637}
+  m_Father: {fileID: 1126382692}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1959538825
 MonoBehaviour:
@@ -6564,16 +6910,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26c9437e942f8b74caadd0ee8a02e0c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _name: 
-  price: 0
+  _name: Illinois Avenue
+  price: 240
   mortgageValue: 0
+  isMortgaged: 0
   owner: {fileID: 0}
-  value: 0
-  baseValue: 0
-  potentialValue: 0
-  cashFlowValue: 0
-  strategicValue: 0
+  value: 315
   colorGroup: {r: 0, g: 0, b: 0, a: 0}
+  counterparts: []
 --- !u!61 &1959538826
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6699,11 +7043,11 @@ Transform:
   m_GameObject: {fileID: 2040663305}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.3197892, y: 3.4829888, z: -1}
-  m_LocalScale: {x: 0.58727884, y: 0.9947301, z: 1}
+  m_LocalPosition: {x: 1.3197892, y: 3.4829884, z: -1}
+  m_LocalScale: {x: 0.58727884, y: 0.99473, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1430557637}
+  m_Father: {fileID: 903661553}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2040663308
 MonoBehaviour:
@@ -6717,16 +7061,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26c9437e942f8b74caadd0ee8a02e0c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _name: 
-  price: 0
+  _name: Ventor Avenue
+  price: 260
   mortgageValue: 0
+  isMortgaged: 0
   owner: {fileID: 0}
-  value: 0
-  baseValue: 0
-  potentialValue: 0
-  cashFlowValue: 0
-  strategicValue: 0
+  value: 342
   colorGroup: {r: 0, g: 0, b: 0, a: 0}
+  counterparts: []
 --- !u!61 &2040663309
 BoxCollider2D:
   m_ObjectHideFlags: 0

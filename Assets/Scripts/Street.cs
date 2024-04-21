@@ -1,8 +1,10 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Street : Property
 {
     [SerializeField] Color colorGroup;
+    [SerializeField] List<Street> counterparts;
     int buildCost;
     int numHouses; //5 Houses = 1 hotel
     public void addHouse()

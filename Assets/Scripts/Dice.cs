@@ -1,4 +1,3 @@
-using System.Diagnostics.Tracing;
 using UnityEngine;
 
 public class Dice : MonoBehaviour
@@ -7,9 +6,11 @@ public class Dice : MonoBehaviour
     public Merchant merchantInTurn;
     public int value {  get; private set; }
     private int counter = 0;
-
+    public static Dice dice { get; set; }
     private void Start()
     {
+        if (dice == null) dice = this;
+        else Destroy(this);
         counter = Random.Range(0, merchants.Length);
         merchantInTurn = merchants[counter];
     }
