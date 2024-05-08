@@ -1,20 +1,22 @@
-using Unity.VisualScripting;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
-public class Property : MonoBehaviour
+public class Property : MonoBehaviour, IHost
 {
-    [SerializeField] public string _name;
-    [SerializeField] protected int price;
-    protected int rent;
-    protected int unmortgagePrice;
-    public int mortgageValue;
+    public Property[] counterparts;
     public bool isMortgaged = false;
+    public int mortgageValue;
+    [SerializeField] public string _name;
     public Merchant owner;
+    [SerializeField] public int price;
+    virtual public int rent {  get; protected set; }
+    protected int unmortgagePrice;
     public int value;
-
+    
     virtual protected void Start()
     {
-        rent = price / 10;
         mortgageValue = price / 2;
         unmortgagePrice = (int)(mortgageValue * 1.1);
     }
@@ -25,14 +27,13 @@ public class Property : MonoBehaviour
         {
             //choose to buy or auction
             Debug.Log("choose to buy or auction");
-            if (merchant.chooseToBuy(value, price))
+            if (merchant.chooseToBuy(this, price))
             {
                 if (merchant.pay(price)) merchant.buy(this);
             }
             else
             {
-                int startingPrice = price;
-                //auction
+                auction(merchant, false);
             }
         }
         else if (owner != merchant && !isMortgaged)
@@ -45,41 +46,97 @@ public class Property : MonoBehaviour
     {
         if (merchant.GetComponent<Merchant>().pay(rent))
         {
-            owner.cash += 0;
+            owner.cash += rent;
             Debug.Log($"{merchant.GetComponent<Merchant>()._name} has paid ${rent} to {owner._name}");
         }
         else
         {
             //relinquish all properties
-            Property[] allProperties = FindObjectsOfType<Property>();
-            foreach (Property property in allProperties)
+            List<Property> allProperties = merchant.properties;
+            foreach (Property property in merchant.properties)
             {
-                if (property.owner == merchant.GetComponent<Merchant>())
-                {
-                    property.owner = owner;
-                }
+                property.owner = owner;
             }
-            Debug.Log("relinquish all properties");
+            owner.cash += merchant.cash;
+            Debug.Log($"{merchant._name} is bankrupt. {owner._name} has taken over.");
+            owner.updateMonopolies();
+            Dice.dice.removeMerchant(merchant);
+            Destroy(merchant.gameObject);
         }
     }
 
-    public void unmortgage()
+    public bool unmortgage()
     {
-        owner.cash -= unmortgagePrice;
-        unmortgagePrice = 0;
-        isMortgaged = false;
+        if (owner.cash >= unmortgagePrice)
+        {
+            owner.cash -= unmortgagePrice;
+            unmortgagePrice = 0;
+            isMortgaged = false;
+            Debug.Log($"{owner._name} has unmortgaged {this._name}");
+            return true;
+        }
+        else return false;
     }
 
-    virtual public void mortgage()
+    virtual public int mortgage()
     {
-        int mortgageValue = price / 2;
-        unmortgagePrice = mortgageValue + (mortgageValue / 10);
         owner.cash += mortgageValue;
         isMortgaged = true;
+        Debug.Log($"{owner._name} has mortgaged {this._name}");
+        return mortgageValue;
     }
 
     public void sell(Merchant merchant)
     {
         owner = merchant;
+    }
+
+    public void auction(Merchant seller, bool hasSeller)
+    {
+        int maxPrice = int.MinValue;
+        Merchant maxBidder = null;
+        foreach(Merchant merchant in FindObjectsOfType<Merchant>())
+        {
+            int price = merchant == seller ? 0 : merchant.setAuctionPrice(this);
+            if (price > maxPrice)
+            {
+                maxPrice = price;
+                maxBidder = merchant;
+            }
+        }
+        //highest bidder pays
+        if(maxPrice > price && maxBidder.pay(maxPrice))
+        {
+            if (hasSeller) seller.cash += maxPrice;
+            maxBidder.buy(this);
+            return;
+        }
+        //if bidder cannot pay
+        Debug.Log($"{maxBidder._name} could not pay his bid of {maxPrice}.");
+        Merchant[] excluded = {seller, maxBidder};
+        if (hasSeller) seller.cash += auction(excluded);
+    }
+
+    public int auction(Merchant[] excluded)
+    {
+        int maxPrice = int.MinValue;
+        Merchant maxBidder = null;
+        foreach (Merchant merchant in FindObjectsOfType<Merchant>())
+        {
+            int price = excluded.Contains(merchant) ? 0 : merchant.setAuctionPrice(this);
+            if (price > maxPrice)
+            {
+                maxPrice = price;
+                maxBidder = merchant;
+            }
+        }
+        if (maxPrice < price) return 0;
+        if (maxBidder.pay(maxPrice))
+        {
+            maxBidder.buy(this);
+            return maxPrice;
+        }
+        Debug.Log($"{maxBidder._name} could not pay his bid of {maxPrice}.");
+        return auction(excluded.Append(maxBidder).ToArray());
     }
 }

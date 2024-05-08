@@ -154,6 +154,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _name: Pig
+  inJail: 0
+  numJailFree: 0
+  properties: []
+  propertiesToRequest: []
 --- !u!212 &61067852
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -319,11 +323,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6798085451b2a1e4a829092814a049b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _name: H and O RailRoad
-  price: 200
-  mortgageValue: 0
+  counterparts:
+  - {fileID: 1760667986}
+  - {fileID: 1662102018}
+  - {fileID: 877929900}
   isMortgaged: 0
+  mortgageValue: 0
+  _name: B. & O. RAILROAD
   owner: {fileID: 0}
+  price: 200
   value: 245
 --- !u!61 &77784554
 BoxCollider2D:
@@ -401,6 +409,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _name: Wolf
+  inJail: 0
+  numJailFree: 0
+  properties: []
+  propertiesToRequest: []
 --- !u!212 &114176065
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -696,14 +708,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26c9437e942f8b74caadd0ee8a02e0c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _name: St. Charles Place
-  price: 140
-  mortgageValue: 0
+  counterparts:
+  - {fileID: 205352261}
+  - {fileID: 242229461}
   isMortgaged: 0
+  mortgageValue: 0
+  _name: ST CHARLES PLACE
   owner: {fileID: 0}
+  price: 140
   value: 180
-  colorGroup: {r: 0, g: 0, b: 0, a: 0}
-  counterparts: []
+  buildCost: 100
+  colorGroup: 3
+  numHouses: 0
+  rents: 0a0000003200000096000000c201000071020000ee020000
 --- !u!61 &142439896
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -760,6 +777,7 @@ GameObject:
   - component: {fileID: 163585672}
   - component: {fileID: 163585671}
   - component: {fileID: 163585673}
+  - component: {fileID: 163585674}
   m_Layer: 0
   m_Name: Income Tax
   m_TagString: Untagged
@@ -879,6 +897,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &163585674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 163585670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84d1e277c58ae3642bab1c987c878b8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 1
+  tax: 200
 --- !u!1 &201263891
 GameObject:
   m_ObjectHideFlags: 0
@@ -977,14 +1009,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26c9437e942f8b74caadd0ee8a02e0c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _name: Baltic Avenue
-  price: 60
-  mortgageValue: 0
+  counterparts:
+  - {fileID: 1661180758}
   isMortgaged: 0
+  mortgageValue: 0
+  _name: BALTIC AVENUE
   owner: {fileID: 0}
+  price: 60
   value: 84
-  colorGroup: {r: 0.79622644, g: 0.6173831, b: 0.20281231, a: 0}
-  counterparts: []
+  buildCost: 50
+  colorGroup: 1
+  numHouses: 0
+  rents: 04000000140000003c000000b400000040010000c2010000
 --- !u!61 &201263895
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1128,14 +1164,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26c9437e942f8b74caadd0ee8a02e0c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _name: States Avenue
-  price: 140
-  mortgageValue: 0
+  counterparts:
+  - {fileID: 142439895}
+  - {fileID: 242229461}
   isMortgaged: 0
+  mortgageValue: 0
+  _name: STATES AVENUE
   owner: {fileID: 0}
+  price: 140
   value: 180
-  colorGroup: {r: 0, g: 0, b: 0, a: 0}
-  counterparts: []
+  buildCost: 100
+  colorGroup: 3
+  numHouses: 0
+  rents: 0a0000003200000096000000c201000071020000ee020000
 --- !u!61 &205352262
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1409,14 +1450,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26c9437e942f8b74caadd0ee8a02e0c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _name: Marvin Avenue
-  price: 260
-  mortgageValue: 0
+  counterparts:
+  - {fileID: 694411145}
+  - {fileID: 2040663308}
   isMortgaged: 0
+  mortgageValue: 0
+  _name: MARVIN GARDENS
   owner: {fileID: 0}
+  price: 280
   value: 369
-  colorGroup: {r: 0, g: 0, b: 0, a: 0}
-  counterparts: []
+  buildCost: 150
+  colorGroup: 6
+  numHouses: 0
+  rents: 1800000078000000400100005203000001040000b0040000
 --- !u!61 &213138195
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1560,14 +1606,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26c9437e942f8b74caadd0ee8a02e0c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _name: Boardwalk
-  price: 400
-  mortgageValue: 0
+  counterparts:
+  - {fileID: 1931718343}
   isMortgaged: 0
+  mortgageValue: 0
+  _name: BROADWALK
   owner: {fileID: 0}
+  price: 400
   value: 510
-  colorGroup: {r: 0, g: 0, b: 0, a: 0}
-  counterparts: []
+  buildCost: 200
+  colorGroup: 8
+  numHouses: 0
+  rents: 32000000c80000005802000078050000a4060000d0070000
 --- !u!61 &240568322
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1711,14 +1761,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26c9437e942f8b74caadd0ee8a02e0c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _name: Virginia Avenue
-  price: 160
-  mortgageValue: 0
+  counterparts:
+  - {fileID: 142439895}
+  - {fileID: 205352261}
   isMortgaged: 0
+  mortgageValue: 0
+  _name: VIRGINIA AVENUE
   owner: {fileID: 0}
+  price: 160
   value: 207
-  colorGroup: {r: 0, g: 0, b: 0, a: 0}
-  counterparts: []
+  buildCost: 100
+  colorGroup: 3
+  numHouses: 0
+  rents: 0c0000003c000000b4000000f4010000bc02000084030000
 --- !u!61 &242229462
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2223,14 +2278,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26c9437e942f8b74caadd0ee8a02e0c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _name: Indiana Avenue
-  price: 220
-  mortgageValue: 0
+  counterparts:
+  - {fileID: 962174959}
+  - {fileID: 1959538825}
   isMortgaged: 0
+  mortgageValue: 0
+  _name: INDIANA AVENUE
   owner: {fileID: 0}
+  price: 220
   value: 288
-  colorGroup: {r: 0, g: 0, b: 0, a: 0}
-  counterparts: []
+  buildCost: 150
+  colorGroup: 5
+  numHouses: 0
+  rents: 120000005a000000fa000000bc0200006b0300001a040000
 --- !u!61 &502243671
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2379,6 +2439,7 @@ GameObject:
   - component: {fileID: 600763698}
   - component: {fileID: 600763697}
   - component: {fileID: 600763699}
+  - component: {fileID: 600763700}
   m_Layer: 0
   m_Name: Luxury Tax
   m_TagString: Untagged
@@ -2498,6 +2559,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &600763700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 600763696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84d1e277c58ae3642bab1c987c878b8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 1
+  tax: 100
 --- !u!1 &640602727
 GameObject:
   m_ObjectHideFlags: 0
@@ -2726,14 +2801,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26c9437e942f8b74caadd0ee8a02e0c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _name: St. James Place
-  price: 180
-  mortgageValue: 0
+  counterparts:
+  - {fileID: 1489414489}
+  - {fileID: 1275140542}
   isMortgaged: 0
+  mortgageValue: 0
+  _name: ST. JAMES PLACE
   owner: {fileID: 0}
+  price: 180
   value: 234
-  colorGroup: {r: 0, g: 0, b: 0, a: 0}
-  counterparts: []
+  buildCost: 0
+  colorGroup: 4
+  numHouses: 0
+  rents: 0e00000046000000c800000026020000ee020000b6030000
 --- !u!61 &664383610
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2877,14 +2957,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26c9437e942f8b74caadd0ee8a02e0c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _name: Atlantic Avenue
-  price: 260
-  mortgageValue: 0
+  counterparts:
+  - {fileID: 2040663308}
+  - {fileID: 213138194}
   isMortgaged: 0
+  mortgageValue: 0
+  _name: ATLANTIC AVENUE
   owner: {fileID: 0}
+  price: 260
   value: 342
-  colorGroup: {r: 0, g: 0, b: 0, a: 0}
-  counterparts: []
+  buildCost: 150
+  colorGroup: 6
+  numHouses: 0
+  rents: 160000006e0000004a01000020030000cf0300007e040000
 --- !u!61 &694411146
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3028,14 +3113,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26c9437e942f8b74caadd0ee8a02e0c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _name: North Carolina Avenue
-  price: 300
-  mortgageValue: 0
+  counterparts:
+  - {fileID: 1006966275}
+  - {fileID: 1613228417}
   isMortgaged: 0
+  mortgageValue: 0
+  _name: NORTH CAROLINA AVENUE
   owner: {fileID: 0}
+  price: 300
   value: 396
-  colorGroup: {r: 0, g: 0, b: 0, a: 0}
-  counterparts: []
+  buildCost: 200
+  colorGroup: 7
+  numHouses: 0
+  rents: 1a0000008200000086010000840300004c040000fb040000
 --- !u!61 &703141885
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3342,14 +3432,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26c9437e942f8b74caadd0ee8a02e0c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _name: Oriental Avenue
-  price: 100
-  mortgageValue: 0
+  counterparts:
+  - {fileID: 1841402416}
+  - {fileID: 1614055545}
   isMortgaged: 0
+  mortgageValue: 0
+  _name: ORIENTAL AVENUE
   owner: {fileID: 0}
+  price: 100
   value: 136
-  colorGroup: {r: 0, g: 0, b: 0, a: 0}
-  counterparts: []
+  buildCost: 50
+  colorGroup: 2
+  numHouses: 0
+  rents: 060000001e0000005a0000000e0100009001000026020000
 --- !u!61 &742581133
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3816,6 +3911,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _name: Lion
+  inJail: 0
+  numJailFree: 0
+  properties: []
+  propertiesToRequest: []
 --- !u!212 &848420915
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3981,11 +4080,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6798085451b2a1e4a829092814a049b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _name: ShortLine
-  price: 200
-  mortgageValue: 0
+  counterparts:
+  - {fileID: 1760667986}
+  - {fileID: 1662102018}
+  - {fileID: 77784553}
   isMortgaged: 0
+  mortgageValue: 0
+  _name: SHORT LINE
   owner: {fileID: 0}
+  price: 200
   value: 245
 --- !u!61 &877929901
 BoxCollider2D:
@@ -4164,14 +4267,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26c9437e942f8b74caadd0ee8a02e0c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _name: Kentucky Avenue
-  price: 220
-  mortgageValue: 0
+  counterparts:
+  - {fileID: 502243670}
+  - {fileID: 1959538825}
   isMortgaged: 0
+  mortgageValue: 0
+  _name: KENTUCKY AVENUE
   owner: {fileID: 0}
+  price: 220
   value: 288
-  colorGroup: {r: 0, g: 0, b: 0, a: 0}
-  counterparts: []
+  buildCost: 150
+  colorGroup: 5
+  numHouses: 0
+  rents: 120000005a000000fa000000bc0200006b0300001a040000
 --- !u!61 &962174960
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4315,14 +4423,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26c9437e942f8b74caadd0ee8a02e0c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _name: Pacific Avenue
-  price: 300
-  mortgageValue: 0
+  counterparts:
+  - {fileID: 703141884}
+  - {fileID: 1613228417}
   isMortgaged: 0
+  mortgageValue: 0
+  _name: PACIFIC AVENUE
   owner: {fileID: 0}
+  price: 300
   value: 396
-  colorGroup: {r: 0, g: 0, b: 0, a: 0}
-  counterparts: []
+  buildCost: 200
+  colorGroup: 7
+  numHouses: 0
+  rents: 1a0000008200000086010000840300004c040000fb040000
 --- !u!61 &1006966276
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4636,14 +4749,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26c9437e942f8b74caadd0ee8a02e0c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _name: New York Avenue
-  price: 200
-  mortgageValue: 0
+  counterparts:
+  - {fileID: 664383609}
+  - {fileID: 1489414489}
   isMortgaged: 0
+  mortgageValue: 0
+  _name: NEW YORK AVENUE
   owner: {fileID: 0}
+  price: 200
   value: 261
-  colorGroup: {r: 0, g: 0, b: 0, a: 0}
-  counterparts: []
+  buildCost: 100
+  colorGroup: 4
+  numHouses: 0
+  rents: 1000000050000000dc0000005802000020030000e8030000
 --- !u!61 &1275140543
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4931,14 +5049,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26c9437e942f8b74caadd0ee8a02e0c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _name: Tennessee Avenue
-  price: 180
-  mortgageValue: 0
+  counterparts:
+  - {fileID: 664383609}
+  - {fileID: 1275140542}
   isMortgaged: 0
+  mortgageValue: 0
+  _name: TENNESSEE AVENUE
   owner: {fileID: 0}
+  price: 180
   value: 234
-  colorGroup: {r: 0, g: 0, b: 0, a: 0}
-  counterparts: []
+  buildCost: 100
+  colorGroup: 4
+  numHouses: 0
+  rents: 8c00000046000000c800000026020000ee020000b6030000
 --- !u!61 &1489414490
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5088,6 +5211,7 @@ MonoBehaviour:
   - {fileID: 114176064}
   - {fileID: 61067851}
   merchantInTurn: {fileID: 0}
+  gameOver: 0
 --- !u!61 &1493704700
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5198,6 +5322,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _name: Dog
+  inJail: 0
+  numJailFree: 0
+  properties: []
+  propertiesToRequest: []
 --- !u!212 &1611539855
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5363,14 +5491,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26c9437e942f8b74caadd0ee8a02e0c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _name: Pennsylvania Avenue
-  price: 320
-  mortgageValue: 0
+  counterparts:
+  - {fileID: 1006966275}
+  - {fileID: 703141884}
   isMortgaged: 0
+  mortgageValue: 0
+  _name: PENNSYLVANIA AVENUE
   owner: {fileID: 0}
+  price: 320
   value: 423
-  colorGroup: {r: 0, g: 0, b: 0, a: 0}
-  counterparts: []
+  buildCost: 200
+  colorGroup: 7
+  numHouses: 0
+  rents: 1e00000096000000c2010000e8030000b004000078050000
 --- !u!61 &1613228418
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5514,14 +5647,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26c9437e942f8b74caadd0ee8a02e0c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _name: Connecticut Avenue
-  price: 120
-  mortgageValue: 0
+  counterparts:
+  - {fileID: 742581132}
+  - {fileID: 1841402416}
   isMortgaged: 0
+  mortgageValue: 0
+  _name: CONNECTICUT AVENUE
   owner: {fileID: 0}
+  price: 120
   value: 153
-  colorGroup: {r: 0, g: 0, b: 0, a: 0}
-  counterparts: []
+  buildCost: 50
+  colorGroup: 2
+  numHouses: 0
+  rents: 0800000028000000640000002c010000c201000058020000
 --- !u!61 &1614055546
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5664,14 +5802,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26c9437e942f8b74caadd0ee8a02e0c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _name: Mediterranean Avenue
-  price: 60
-  mortgageValue: 0
+  counterparts:
+  - {fileID: 201263894}
   isMortgaged: 0
+  mortgageValue: 0
+  _name: MEDITERANEAN AVENUE
   owner: {fileID: 0}
+  price: 60
   value: 82
-  colorGroup: {r: 0.79622644, g: 0.6173831, b: 0.20281231, a: 0}
-  counterparts: []
+  buildCost: 50
+  colorGroup: 1
+  numHouses: 0
+  rents: 020000000a0000001e0000005a000000a0000000fa000000
 --- !u!1 &1662102015
 GameObject:
   m_ObjectHideFlags: 0
@@ -5770,11 +5912,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6798085451b2a1e4a829092814a049b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _name: Pennsylvania RailRoad
-  price: 200
-  mortgageValue: 0
+  counterparts:
+  - {fileID: 1760667986}
+  - {fileID: 77784553}
+  - {fileID: 877929900}
   isMortgaged: 0
+  mortgageValue: 0
+  _name: PENNSYLVANIA RAILROAD
   owner: {fileID: 0}
+  price: 200
   value: 245
 --- !u!61 &1662102019
 BoxCollider2D:
@@ -5832,6 +5978,7 @@ GameObject:
   - component: {fileID: 1672897769}
   - component: {fileID: 1672897768}
   - component: {fileID: 1672897770}
+  - component: {fileID: 1672897771}
   m_Layer: 0
   m_Name: Go To Jail
   m_TagString: Untagged
@@ -5951,6 +6098,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1672897771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1672897767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84d1e277c58ae3642bab1c987c878b8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  tax: 0
 --- !u!1 &1716352691
 GameObject:
   m_ObjectHideFlags: 0
@@ -6049,13 +6210,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8eaddeec07ca3e14b99dd05076097b87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _name: Electric Company
-  price: 150
-  mortgageValue: 0
+  counterparts:
+  - {fileID: 1828959170}
   isMortgaged: 0
+  mortgageValue: 0
+  _name: ELECTRIC COMPANY
   owner: {fileID: 0}
+  price: 150
   value: 255
-  counterpart: {fileID: 1828959170}
 --- !u!61 &1716352695
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6199,11 +6361,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6798085451b2a1e4a829092814a049b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _name: Reading RailRoad
-  price: 200
-  mortgageValue: 0
+  counterparts:
+  - {fileID: 1662102018}
+  - {fileID: 77784553}
+  - {fileID: 877929900}
   isMortgaged: 0
+  mortgageValue: 0
+  _name: READING RAILROAD
   owner: {fileID: 0}
+  price: 200
   value: 245
 --- !u!61 &1760667987
 BoxCollider2D:
@@ -6385,13 +6551,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8eaddeec07ca3e14b99dd05076097b87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _name: Water Works
-  price: 150
-  mortgageValue: 0
+  counterparts:
+  - {fileID: 1716352694}
   isMortgaged: 0
+  mortgageValue: 0
+  _name: WATER WORKS
   owner: {fileID: 0}
+  price: 150
   value: 255
-  counterpart: {fileID: 1716352694}
 --- !u!61 &1828959171
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6535,14 +6702,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26c9437e942f8b74caadd0ee8a02e0c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _name: Vermont Avenue
-  price: 100
-  mortgageValue: 0
+  counterparts:
+  - {fileID: 742581132}
+  - {fileID: 1614055545}
   isMortgaged: 0
+  mortgageValue: 0
+  _name: VERMONT AVENUE
   owner: {fileID: 0}
+  price: 100
   value: 136
-  colorGroup: {r: 0, g: 0, b: 0, a: 0}
-  counterparts: []
+  buildCost: 50
+  colorGroup: 2
+  numHouses: 0
+  rents: 060000001e0000005a0000000e0100009001000026020000
 --- !u!61 &1841402417
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6720,14 +6892,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26c9437e942f8b74caadd0ee8a02e0c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _name: Park Place
-  price: 350
-  mortgageValue: 0
+  counterparts:
+  - {fileID: 240568321}
   isMortgaged: 0
+  mortgageValue: 0
+  _name: PARK PLACE
   owner: {fileID: 0}
+  price: 350
   value: 455
-  colorGroup: {r: 0, g: 0, b: 0, a: 0}
-  counterparts: []
+  buildCost: 200
+  colorGroup: 8
+  numHouses: 0
+  rents: 23000000af000000f40100004c04000014050000dc050000
 --- !u!61 &1931718344
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6910,14 +7086,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26c9437e942f8b74caadd0ee8a02e0c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _name: Illinois Avenue
-  price: 240
-  mortgageValue: 0
+  counterparts:
+  - {fileID: 962174959}
+  - {fileID: 502243670}
   isMortgaged: 0
+  mortgageValue: 0
+  _name: ILLINOIS AVENUE
   owner: {fileID: 0}
+  price: 240
   value: 315
-  colorGroup: {r: 0, g: 0, b: 0, a: 0}
-  counterparts: []
+  buildCost: 150
+  colorGroup: 5
+  numHouses: 0
+  rents: 14000000640000002c010000ee0200009d0300004c040000
 --- !u!61 &1959538826
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7061,14 +7242,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26c9437e942f8b74caadd0ee8a02e0c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _name: Ventor Avenue
-  price: 260
-  mortgageValue: 0
+  counterparts:
+  - {fileID: 694411145}
+  - {fileID: 213138194}
   isMortgaged: 0
+  mortgageValue: 0
+  _name: VENTNOR AVENUE
   owner: {fileID: 0}
+  price: 260
   value: 342
-  colorGroup: {r: 0, g: 0, b: 0, a: 0}
-  counterparts: []
+  buildCost: 150
+  colorGroup: 6
+  numHouses: 0
+  rents: 160000006e0000004a01000020030000cf0300007e040000
 --- !u!61 &2040663309
 BoxCollider2D:
   m_ObjectHideFlags: 0
